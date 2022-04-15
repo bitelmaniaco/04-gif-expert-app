@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { GifExpertApp } from './GifExpertApp';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+    <GifExpertApp />,
+
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+//https://api.giphy.com/v1/gifs/search?api_key=IxoM5OhrbIqnnmVaTndHqz5iRLmP4fmf&q=&limit=25&offset=0&rating=g&lang=en
