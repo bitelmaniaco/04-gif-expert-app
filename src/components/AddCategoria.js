@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export const AddCategoria = ({ setCategorico }) => {
 
-    const [valorInput, setValorInput] = useState('Hola Paco');
+    const [valorInput, setValorInput] = useState('');
     
     const cogerCambiosInput = ( evento ) => {
         setValorInput( evento.target.value );
@@ -22,7 +22,7 @@ export const AddCategoria = ({ setCategorico }) => {
             setValorInput('');
         }
     }
-    const borroInput = () => { setValorInput(''); }
+    const borroInput = () => {  setValorInput('');}
 
 
     return (
@@ -33,6 +33,7 @@ export const AddCategoria = ({ setCategorico }) => {
                 value={ valorInput }
                 onChange={ cogerCambiosInput }
                 onClick={ borroInput }
+                placeholder='Introduce algo'
             />
         
         </form>
