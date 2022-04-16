@@ -12,7 +12,6 @@ export const AddCategoria = ({ setCategorico }) => {
 
     const handleSubmit = ( evento ) => {
         evento.preventDefault();
-
         // console.log('TODO HECHO');
         //validacion
         if( valorInput.trim().length > 2 ){
